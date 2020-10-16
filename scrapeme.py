@@ -4,7 +4,7 @@ import pprint
 
 # This section provides the site and parses out the info wanted
 # This example uses the Hacker News Arrticles page
-# Line 11-14 are the specific links you want to find
+# Line 12-15 are the specific attributes you want to find
 res = requests.get('https://news.ycombinator.com/front')
 res2 = requests.get('https://news.ycombinator.com/front?day=2020-10-12&p=2')
 soup = BeautifulSoup(res.text, 'html.parser')
